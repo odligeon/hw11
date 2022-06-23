@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<title>Simple Site</title>
+</head>
+<body>
+<section class="header__section">
+	<div class="container">
+		<header class="header">
+			<nav class="header__nav">
+				<ul class="header__nav__list">
+					<li class="header__item"><a href="#">Главная</a></li>
+					<li class="header__item"><a href="#" class="fw-400">Об авторе</a></li>
+					<li class="header__item"><a href="#" class="fw-400">Работы</a></li>
+					<li class="header__item"><a href="#" class="fw-400">Процесс</a></li>
+					<li class="header__item"><a href="#" class="fw-400">Контакты</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="header__content">
+			<h1>Дизайн и верстка</h1>
+			<div class="header__section__text">
+				<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+					стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+			</div>
+			<a href="mailto:ligeon2@gmail.com" class="email__button">Написать мне</a>
+		</div>
+	</div>
+</section>
+<section class="aboutme">
+	<div class="aboutme__info">
+		<h2>Обо мне</h2>
+		<p class="text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+			стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+	</div>
+</section>
+<section class="projects">
+	<div class="container">
+		<ul class="projects__list">
+			<li class="projects__item">
+				<img src="img/project.svg" alt="project" class="project__image">
+				<div class="right">
+					<h3>40+</h3>
+					<span class="project__text">проектов</span>
+				</div>
+			</li>
+			<li class="projects__item">
+				<img src="img/project.svg" alt="project" class="project__image">
+				<div class="right">
+					<h3>40+</h3>
+					<span class="project__text">проектов</span>
+				</div>
+			</li>
+			<li class="projects__item">
+				<img src="img/project.svg" alt="project" class="project__image">
+				<div class="right">
+					<h3>40+</h3>
+					<span class="project__text">проектов</span>
+				</div>
+			</li>
+			<li class="projects__item">
+				<img src="img/project.svg" alt="project" class="project__image">
+				<div class="right">
+					<h3>40+</h3>
+					<span class="project__text">проектов</span>
+				</div>
+			</li>
+			<li class="projects__item">
+				<img src="img/project.svg" alt="project" class="project__image">
+				<div class="right">
+					<h3>40+</h3>
+					<span class="project__text">проектов</span>
+				</div>
+			</li>
+			<li class="projects__item">
+				<img src="img/project.svg" alt="project" class="project__image">
+				<div class="right">
+					<h3>40+</h3>
+					<span class="project__text">проектов</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+<section class="video__section">
+	<div class="container">
+		<div class="video__info">
+			<h2>Как я работаю</h2>
+			<p class="text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+				является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+		</div>
+		<iframe src="https://www.youtube.com/embed/61Wp1HHg9Ck" title="YouTube video player" frameborder="0"
+		        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		        allowfullscreen></iframe>
+	</div>
+</section>
+<section class="footer">
+	<div class="container">
+		<footer>
+			<h3>Иван Иванов</h3>
+			<p class="footer__text">(с) 2018. Все права защищены.</p>
+		</footer>
+	</div>
+</section>
+<div class="chat-button" id="chat" onclick="return toggleModal()">Chat</div>
+<div class="modal" id="modal">
+	<section class="chat">
+		<form action="">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name">
+			<label for="message">Message</label>
+			<textarea name="message" id="message" cols="30" rows="10"></textarea>
+			<button>Send</button>
+		</form>
+		<div class="close" onclick="return toggleModal()"></div>
+	</section>
+</div>
+<script>
+	function toggleModal () {
+        modal = document.querySelector('#modal');
+        modal.classList.toggle('active');
+	}
+</script>
+</body>
+</html>

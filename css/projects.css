@@ -1,0 +1,54 @@
+.projects {
+    background: #34547A;
+}
+
+.projects>.container>ul {
+    padding: 100px 0 95px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.project__image {
+    margin-right: 20px;
+}
+
+.right {
+    float: right;
+}
+
+.project__text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.projects__item h3 {
+    margin-bottom: 5px;
+}
+
+li.projects__item {
+    margin-right: 45px;
+    display: inline-block;
+}
+
+.projects__item:last-of-type {
+    margin: 0;
+}
+
+.projects__item:first-of-type {
+    margin-left: 10px;
+}
+
+.projects__list {
+    white-space: nowrap;
+}

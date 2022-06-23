@@ -1,0 +1,74 @@
+.chat-button {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    background: yellowgreen;
+    text-align: center;
+    line-height: 100px;
+    z-index: 1;
+}
+
+.chat form {
+    width: 500px;
+    height: 500px;
+    margin: 10% auto 0;
+    background: white;
+    border-radius: 6px;
+    padding: 1rem;
+    animation: ease 1s modalRollOut;
+}
+
+.chat input, textarea {
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.active {
+    display: block;
+}
+
+@keyframes modalRollOut {
+    /*0% {transform: rotate(0) scale(0) translateX(-900px)}*/
+    /*50% {transform: rotate(180deg) scale(0.5) translateX(-300px)}*/
+    /*100% {transform: rotate(360deg) scale(1) translateX(0px)}*/
+
+    0% {transform: translateX(100%)}
+    25% {transform: translateX(-20%)}
+    50% {transform: translateX(5%)}
+    100% {transform: translateX(0)}
+
+}
+
+.close {
+    position: absolute;
+    top: 6%;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+    animation: infinite 3s closeMove;
+}
+
+.close::before{
+    content: "\274c";
+}
+
+@keyframes closeMove {
+    0% {transform: skewX(0) scale(1)}
+    20% {transform: skewX(30deg) scale(0.8)}
+    40% {transform: skewX(0) scale(1)}
+    60% {transform: skewX(-30deg) scale(0.8)}
+    0% {transform: skewX(0) scale(1)}
+}

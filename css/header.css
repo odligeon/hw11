@@ -1,0 +1,79 @@
+.header__section {
+    background: #EEEFF1;
+}
+
+.header__nav__list {
+    padding-top: 79px;
+    height: 105px;
+}
+
+li.header__item {
+    display: inline-block;
+    margin-right: 38px;
+}
+
+.header__item > a{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    color: #34547A;
+    text-transform: uppercase;
+}
+
+.header {
+    margin-bottom: 144px;
+}
+
+.header__content {
+    padding-bottom: 141px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 79px;
+    color: #000000;
+    margin-bottom: 33px;
+}
+
+.header__section__text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    width: 540px;
+    margin-bottom: 58px;
+}
+
+.email__button {
+    width: 225px;
+    height: 65px;
+    background: #34547A;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+.email__button:hover {
+    width: 300px;
+}
+
+.fw-400 {
+    font-weight: 400;
+}

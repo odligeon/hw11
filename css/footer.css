@@ -1,0 +1,27 @@
+footer h3 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 11px;
+}
+
+section.footer {
+    background: #34547A;
+}
+
+footer {
+    padding: 50px 0;
+}
+
+.footer__text{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+
+}
